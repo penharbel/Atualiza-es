@@ -4,14 +4,19 @@ const app = Express();
 const path = require("path");
 const cors = require("cors")
 
-//arquivos estaticos
-app.use(Express.static(path.join(__dirname + '/source')));
+//config
+
+    //ejs
+    app.set("view engine", "ejs");
+
+    //arquivos estaticos
+    app.use(Express.static(path.join(__dirname + '/source')));
 
 //rotas
-app.get("/inicio", function(req,res){
+app.get("/", function(req,res){
 
-    res.sendFile(path.join(__dirname + "/source/index.html"));
-    res.end;
+    res.render(path.join(__dirname + "/source/Apresentacao"))
+    res.end
 
 });
 app.get("/dowload", function(req,res){
