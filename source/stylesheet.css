@@ -30,13 +30,12 @@ button
     position: fixed;
     top: 0px;
     margin: -9px;
-    background: linear-gradient(100deg,white 0%, green 300%);
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    border: 1px solid rgb(48, 48, 48);
-
+    border: 2px solid rgb(89, 214, 152);
+    box-shadow: 2px 2px 30px rgb(22, 216, 206);
 }
 #listatext
 {
@@ -51,7 +50,6 @@ button
     margin: -8px;
     position: relative;
     width: 150vh;
-    background: linear-gradient(100deg,white 0%, green 300%);
     left: 35vh;
     display: flex;
     align-items: center;
@@ -63,7 +61,7 @@ button
 .divfases
 {
 
-    background: linear-gradient(45deg, rgba(67, 189, 226, 0.651) 0%, white 200%);
+    background: linear-gradient(290deg,  rgba(67, 189, 226, 0.651) 0%, white 70%);
     width: 500px;
     height: 500px;
     border-radius: 50px;
@@ -73,5 +71,6 @@ button
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 7px 7px 15px black;
 
 }
