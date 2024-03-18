@@ -11,6 +11,6 @@ function request()
     setTimeout(() => {
         let p = document.getElementById("dash");
         document.getElementById("dowload").removeChild(p);
-    }, 100);
+    }, 1000);
 
 }
